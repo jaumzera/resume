@@ -50,6 +50,42 @@
             text-align: center;
             margin-top: 20px;
         }
+
+        @media print {
+            body {
+                font-family: 'Arial', sans-serif;
+                color: #000;
+                background-color: #fff;
+            }
+        
+            header, footer, nav, aside {
+                display: none;
+            }
+        
+            .main-content {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        
+            h1, h2, h3, h4, h5, h6 {
+                color: #000;
+            }
+        
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        
+            .no-print {
+                display: none;
+            }
+        }
     </style>
 </head>
 

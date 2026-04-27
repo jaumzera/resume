@@ -5,7 +5,7 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Stack from '@mui/material/Stack'
 import Section, { SectionTitle } from '../layout/Section'
-import { highlights, aboutHighlights } from '../../data/resume'
+import { highlights, aboutHighlights, availability } from '../../data/resume'
 import { useTheme } from '@mui/material/styles'
 
 export default function About() {
@@ -39,6 +39,25 @@ export default function About() {
               </Stack>
             ))}
           </Stack>
+
+          <Box
+            sx={{
+              mt: 2.5,
+              display: 'inline-block',
+              px: 1.5,
+              py: 0.75,
+              borderRadius: '8px',
+              fontSize: '0.75rem',
+              fontWeight: 500,
+              lineHeight: 1.6,
+              bgcolor: isDark ? 'rgba(34,197,94,0.1)' : 'rgba(34,197,94,0.08)',
+              color: isDark ? '#4ade80' : '#16a34a',
+              border: '1px solid',
+              borderColor: isDark ? 'rgba(34,197,94,0.25)' : 'rgba(34,197,94,0.3)',
+            }}
+          >
+            {availability}
+          </Box>
         </Grid>
 
         {/* Right: stat cards */}

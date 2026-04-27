@@ -21,6 +21,8 @@ export const highlights = [
   { value: '5+',  label: 'Industries' },
 ]
 
+export const availability = 'Open to Senior/Staff direct-hire and contract opportunities at US-based companies — available as a foreign contractor or via LLC.'
+
 export const aboutHighlights = [
   "Engineered high-throughput data pipelines at eBay processing billions of messages daily — driving SEO discoverability across one of the world's largest e-commerce platforms",
   "Architected a greenfield cloud-native platform from scratch on AWS EKS for one of Brazil's largest agribusiness companies — sole engineer across backend, mobile, and infrastructure",

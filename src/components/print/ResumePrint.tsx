@@ -140,7 +140,7 @@ export default function ResumePrint() {
           <p style={s.name}>{header.name}</p>
           <p style={s.title}>{header.title}</p>
           <div style={s.contactLine}>
-            <span>{contact.email}</span>
+            <span>{contact.linkedin.replace('https://', '')}</span>
             <span style={s.contactDot}>·</span>
             <span>{contact.phone}</span>
             <span style={s.contactDot}>·</span>

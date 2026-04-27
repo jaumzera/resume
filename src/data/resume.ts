@@ -1,17 +1,17 @@
 export const header = {
   name: 'João Massan',
   title: 'Senior Software Engineer',
-  subtitle: 'Backend · Cloud · Distributed Systems',
-  tagline: '20+ years building scalable production systems across e-commerce, telecom and agribusiness.',
+  subtitle: 'Backend · Distributed Systems · Cloud-Native · AI',
+  tagline: '20+ years architecting and shipping production systems at scale — from national telecom platforms to eBay\'s global marketplace.',
 }
 
 export const summary =
-  "Senior Software Engineer with 20+ years building production systems at scale. Backend and cloud-native specialist with deep expertise in Java, Kubernetes, and distributed systems — currently embedded in eBay's SEO engineering organization. Enthusiast of LLM-powered code generation tools and a long-term student of an infinite Master's programme balanced between Machine Learning and Software Engineering."
+  "Polyglot Senior Software Engineer with 20+ years designing and operating production systems at scale. Backend and cloud-native specialist — Java, Python, Node.js, Kubernetes, AWS — currently embedded at eBay engineering high-throughput data pipelines that process billions of daily events. Proven track record of owning full technical direction on greenfield platforms, from cloud infrastructure to mobile. Hands-on with LLMs in production (MCP servers, PySpark, applied AI pipelines) and actively investing in AI as a first-class engineering discipline. Open to Senior/Staff direct-hire and contract opportunities at US-based companies — available as a foreign contractor or via LLC."
 
 export const heroMetrics = [
-  { value: '20+', label: 'Years of Experience' },
-  { value: 'Global', label: 'Scale Systems' },
-  { value: 'Backend', label: '& Platform Focus' },
+  { value: '20+',          label: 'Years of Experience' },
+  { value: 'Billions/Day', label: 'Events Processed at eBay' },
+  { value: 'Java · Python · Node.js', label: 'Polyglot Core Stack' },
 ]
 
 export const highlights = [
@@ -22,15 +22,15 @@ export const highlights = [
 ]
 
 export const aboutHighlights = [
-  "Built and operated systems at global scale — from national telecom platforms to eBay's marketplace infrastructure",
-  'Strong backend and cloud-native focus: Java, Spring Boot, Kubernetes, AWS in production for over a decade',
-  'Experience spanning greenfield architecture, team leadership, and embedded engineering in large international organizations',
+  "Engineered high-throughput data pipelines at eBay processing billions of messages daily — driving SEO discoverability across one of the world's largest e-commerce platforms",
+  "Architected a greenfield cloud-native platform from scratch on AWS EKS for one of Brazil's largest agribusiness companies — sole engineer across backend, mobile, and infrastructure",
+  "Proven polyglot: deep Java expertise, strong Python and Node.js, hands-on LLM tooling in production (MCP servers, PySpark) — comfortable owning full-stack architecture decisions",
 ]
 
 export const skills = {
-  core:     ['Java', 'Spring Boot', 'REST APIs', 'Distributed Systems', 'SQL', 'Kubernetes'],
-  strong:   ['AWS', 'ReactJS', 'Python', 'Docker', 'CI/CD', 'PySpark'],
-  exposure: ['Flutter', 'Hadoop', 'RabbitMQ', 'Oracle DB', 'MongoDB', 'IBM Watson'],
+  core:     ['Java', 'Python', 'Node.js', 'Spring Boot', 'Kubernetes', 'AWS'],
+  strong:   ['Distributed Systems', 'Kafka', 'PySpark', 'PostgreSQL', 'Docker', 'CI/CD'],
+  exposure: ['Flutter', 'Hadoop', 'RabbitMQ', 'MongoDB', 'IBM Watson', 'ReactJS'],
 }
 
 export interface EducationEntry {
@@ -88,23 +88,23 @@ export interface ExperienceEntry {
 
 export const experience: ExperienceEntry[] = [
   {
-    role: 'Software Engineer',
+    role: 'Senior Software Engineer — eBay Inc. (via Avenue Code)',
     company: 'Avenue Code',
     url: 'https://www.avenuecode.com.br',
     period: 'May 2022 – Present',
     location: 'Remote',
-    description: 'Full-time developer at eBay Inc. Member of the SEO Tools Team.',
+    description: "Embedded full-time at eBay Inc., engineering backend services and data pipelines that drive product discoverability across eBay's global marketplace at billions-of-events-per-day scale.",
     bullets: [
-      'Embedded full-time at eBay Inc. within the SEO Tools engineering team',
-      "Building backend services and data pipelines that enhance product discoverability across eBay's global marketplace",
-      'Working with high-throughput messaging (Kafka) and NoSQL stores at web scale',
-      'Collaborating with distributed, international engineering teams across multiple time zones',
+      "Engineer backend services and data pipelines processing billions of daily events to drive SEO discoverability across eBay's global marketplace",
+      'Designed and shipped MCP server infrastructure enabling LLM-native tooling in production — among the first such deployments in eBay\'s engineering org',
+      'Build high-throughput DOM processing pipelines extracting structured data from the web at eBay scale, optimizing crawlability and indexing performance for hundreds of millions of listings',
+      'Collaborate with distributed NA + EMEA engineering teams on architecture decisions affecting millions of daily product impressions',
     ],
     details: {
       context:
         "Avenue Code is a software consultancy that places senior engineers at leading technology companies. This engagement is a full-time placement within eBay's engineering organization, working as an integral team member on the SEO Tools squad after a ~60-day, multi-stage interview process with code challenges, design reviews, and technical deep-dives.",
       responsibilities: [
-        'Develop and maintain SEO tooling services that optimize product listing discoverability',
+        "Develop and maintain SEO tooling services that optimize product listing discoverability across eBay's global marketplace",
         "Design and review system architecture decisions with eBay's engineering leadership",
         "Collaborate with eBay's international teams across NA and EMEA time zones",
         'Apply rigorous testing standards including unit, integration, and E2E tests',
@@ -112,32 +112,32 @@ export const experience: ExperienceEntry[] = [
       ],
       techStack: ['Java', 'Python', 'PySpark', 'Node.js', 'Spring Boot', 'Kubernetes', 'Kafka', 'NoSQL'],
       highlights: [
-        'Working on systems that ingest billions of messages per day',
-        'Built MCP servers for LLM interoperability, at the frontier of applied AI infrastructure in production',
-        'Large-scale DOM processing pipelines that extract structured data from the web at eBay scale',
+        'Systems ingest and process billions of messages per day across Kafka-backed, Kubernetes-native infrastructure',
+        'Built MCP servers for LLM interoperability — production AI tooling at eBay scale',
+        'DOM processing pipelines serve SEO optimization for hundreds of millions of product listings globally',
       ],
     },
   },
   {
-    role: 'Java Developer / Architect',
+    role: 'Solutions Architect & Lead Engineer',
     company: 'Farmbits',
     period: 'Jul 2018 – May 2022',
     location: 'Hybrid — Londrina, PR, Brazil',
     description:
-      "Designed architecture from scratch for Belagricola's digital innovation startup. Built Farmer Portal, mobile app (Flutter/Dart), and all backend services on AWS EKS.",
+      "Architected the entire cloud-native digital platform from scratch for one of Brazil's largest agribusiness companies. Led all engineering decisions — AWS EKS infrastructure, Java/Spring Boot microservices, Vue.js frontend, and Flutter mobile — as sole engineer on a greenfield startup.",
     bullets: [
-      'Designed the full technology architecture for a greenfield agribusiness digital platform',
-      'Delivered Farmer Portal connecting Belagricola with thousands of agribusiness customers',
-      'Built field-consultant mobile app in Flutter/Dart with offline-first capabilities',
-      'Operated all backend services on AWS EKS (Kubernetes) with Java/Spring Boot',
-      'Defined the engineering culture, hiring criteria, and tech philosophy for the startup',
+      'Architected and built the full cloud-native platform on AWS EKS from day one — sole engineer across backend (Java/Spring Boot), web (Vue.js), and mobile (Flutter/Dart)',
+      'Designed offline-first Flutter mobile app replicating SAP pricing logic entirely on-device, enabling field consultants to generate quotes in zero-connectivity rural environments',
+      'Led engineering culture, technical hiring, and architectural direction for the client\'s digital innovation subsidiary',
+      'Operated AWS EKS cluster, GitLab CI/CD pipelines, and all container infrastructure across production environments',
+      'Shipped Flutter to production before the framework\'s own 1.0 production-readiness recommendation — serving thousands of agribusiness customers',
     ],
     details: {
       context:
-        "Belagricola is one of Brazil's largest grain traders. They were launching a digital initiative entirely separate from their consolidated SAP infrastructure — fully web-based, container-native, built from scratch. I was brought in to lead it. Flutter's own documentation still cautioned against production use at the time; we shipped it anyway.",
+        "One of Brazil's largest grain traders was launching a digital initiative entirely separate from their consolidated SAP infrastructure — fully web-based, container-native, built from scratch. I was brought in to define the entire technical direction for their digital spin-off. Every architectural decision was mine. Flutter's own documentation still cautioned against production use at the time; we shipped it anyway.",
       responsibilities: [
         'Create and maintain the AWS EKS cluster and the entire container-based service architecture from day one',
-        'Build and operate Spring Boot microservices for the Farmer Portal — a web platform connecting Belagricola with its agribusiness customers',
+        "Build and operate Spring Boot microservices for the Farmer Portal — a web platform connecting the client with thousands of agribusiness customers",
         'Develop the field consultant mobile app in Flutter/Dart, including an offline-first architecture for agronomists working in remote areas with no connectivity',
         'Replicate SAP pricing and inventory composition logic entirely offline on the mobile device, allowing consultants to browse products and generate quotes with zero network dependency',
         'Lead a small team across all layers: Kubernetes ops, backend, VueJS frontend, and Flutter mobile',
@@ -158,11 +158,11 @@ export const experience: ExperienceEntry[] = [
     period: 'Jun 2018 – 2019',
     location: 'Remote',
     description:
-      'Maintained the Connect Platform for IT billing auditing with Spring Boot, AngularJS, Angular 7, and PostgreSQL.',
+      'Engineered features and performance improvements for the Connect Platform, a SaaS for corporate IT and telecom billing auditing built on Spring Boot, Angular, and PostgreSQL.',
     bullets: [
-      'Maintained and evolved Connect Platform, a SaaS tool for auditing IT and telecom billing costs',
-      'Worked across Spring Boot backend and AngularJS / Angular 7 frontends',
-      'Contributed bug fixes, feature additions, and performance improvements',
+      'Delivered feature additions, bug fixes, and performance improvements for Connect Platform across Spring Boot backend and Angular frontend',
+      'Contributed to AngularJS → Angular 7 frontend migration',
+      'Operated in a fully remote, async-first engineering team — years before remote-first became industry standard',
     ],
     details: {
       context:
@@ -188,12 +188,12 @@ export const experience: ExperienceEntry[] = [
     period: 'May 2014 – 2018',
     location: 'Londrina, PR, Brazil',
     description:
-      "Led development of NET/Claro's national sales platform. Migrated Java EE monolith to microservices with ReactJS frontend. Integrated IBM Watson chatbots.",
+      "Led architecture migration of NET/Claro's national Door-to-Door sales platform from Java EE monolith to Spring Boot microservices + ReactJS. Built VoIP predictive dialer and integrated IBM Watson NLP chatbots.",
     bullets: [
-      "Led development of NET/Claro's national web and mobile sales platform",
-      'Architected migration from Java EE monolith to Spring Boot microservices + ReactJS',
-      'Integrated IBM Watson chatbots using Node.js for conversational sales flows',
-      'Led a small cross-functional team through a major architecture evolution',
+      "Led architecture migration of NET/Claro's national sales platform from Java EE monolith to Spring Boot microservices + ReactJS",
+      'Designed and built a VoIP-based predictive dialer eliminating manual-dialing wait time, measurably increasing operator throughput',
+      'Integrated IBM Watson NLP chatbots via Node.js — among the earliest production chatbot deployments for a commercial sales channel in Brazil',
+      'Led cross-functional team through full-stack modernization: backend, ReactJS + Redux frontend, messaging (RabbitMQ), and MongoDB',
     ],
     details: {
       context:
@@ -221,11 +221,11 @@ export const experience: ExperienceEntry[] = [
     period: 'Mar 2013 – Mar 2014',
     location: 'Londrina - PR / São Paulo - SP, Brazil',
     description:
-      "Built Infracommerce's marketplace B2C platform on Java EE 6 and Oracle ADF. Rewrote pricing model and multi-tenant login architecture.",
+      "Redesigned the pricing model and multi-tenant architecture of Infracommerce's B2C marketplace platform — the foundation that evolved into Extra.com.br, one of Brazil's first large-scale online marketplaces.",
     bullets: [
-      'Developed B2C marketplace platform for major retail clients on Java EE 6 and Oracle ADF',
-      'Rewrote the entire platform pricing model and multi-tenant login architecture',
-      'Built third-party integrations using JAX-RS and JAX-WS',
+      'Redesigned the platform pricing model from per-product to per-SKU, unlocking the multi-seller marketplace architecture',
+      'Evolved platform from single-tenant e-commerce to full multi-tenant marketplace, serving major Brazilian retailers',
+      'Delivered third-party integrations (logistics, payment, catalog) via JAX-RS and JAX-WS',
     ],
     details: {
       context:
@@ -253,10 +253,10 @@ export const experience: ExperienceEntry[] = [
     period: 'Mar 2012 – Mar 2013',
     location: 'Londrina - PR / São Paulo - SP, Brazil',
     description:
-      "Developed dynamic WYSIWYG i18n system for Carrefour's e-commerce platform supporting Portuguese, English, and French.",
+      "Designed and built a dynamic WYSIWYG i18n engine for Carrefour's e-commerce platform, enabling runtime language switching across Portuguese, English, and French without code deploys.",
     bullets: [
-      "Built a WYSIWYG dynamic i18n system for Carrefour's e-commerce platform",
-      'Delivered runtime internationalization supporting PT, EN, and FR without code deploys',
+      "Designed and built a WYSIWYG dynamic i18n engine for Carrefour's e-commerce platform — runtime language switching with zero redeployment",
+      'Delivered multilingual support for PT, EN, and FR; content managers could translate the storefront without engineering involvement',
     ],
     details: {
       context:
@@ -282,11 +282,11 @@ export const experience: ExperienceEntry[] = [
     period: '2011 – 2012',
     location: 'Londrina/Curitiba, PR, Brazil',
     description:
-      "Led a small dev team building a financial statement comparison tool. Managed IT integration after company acquisition by IBPT.",
+      "Architected and led development of BRCont's SaaS platform — acquired by IBPT in under 12 months. Contributed to 'Lupa no Imposto', now embedded in every Brazilian fiscal receipt.",
     bullets: [
-      'Led a small development team as both manager and hands-on architect',
-      'Designed and built an income statement comparison tool for corporate users',
-      'Managed IT system integration process after BRCont was acquired by IBPT',
+      'Architected BRCont SaaS from scratch; company acquired by IBPT in under 12 months of operation',
+      "Contributed to 'Lupa no Imposto' — software now embedded in every Brazilian fiscal receipt displaying estimated tax percentages",
+      'Led development team through post-acquisition integration and platform evolution at IBPT',
     ],
     details: {
       context:
@@ -314,10 +314,10 @@ export const experience: ExperienceEntry[] = [
     period: 'Sep 2007 – Feb 2011',
     location: 'Londrina, PR, Brazil',
     description:
-      "Rewrote NET's legacy PHP sales platform in Java using JBoss Seam 2 and Hibernate 3. The platform became NET's default national sales system.",
+      "Rewrote NET's legacy PHP sales platform in Java from scratch. The rebuilt system became NET's official national Door-to-Door sales hub — deployed across ~50 franchises, and likely one of the first real-time GPS field-sales tracking systems in Brazil.",
     bullets: [
-      "Rewrote NET's legacy PHP sales platform in Java/JBoss Seam 2 from scratch",
-      "Rebuilt system became the default national sales platform for NET (Claro)",
+      "Designed and built NET's national Door-to-Door sales platform in Java/JBoss Seam from scratch — replaced a legacy PHP system and rolled out across ~50 national franchises",
+      "Delivered what was likely one of the first real-time GPS tracking systems for a large field sales force in Brazil, running on Nokia E71 devices",
     ],
     details: {
       context:
@@ -368,5 +368,5 @@ export const contact = {
   phone:    '+55 43 99103 6116',
   website:  'http://www.joaomassan.com.br',
   github:   'https://github.com/jaumzera',
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/in/joaomassan/',
 }

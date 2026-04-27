@@ -12,8 +12,8 @@ import { contact } from '../../data/resume'
 
 export default function Contact() {
   const socials = [
-    contact.github   && { icon: <GitHubIcon />,   label: 'GitHub',   href: contact.github },
-    contact.linkedin && { icon: <LinkedInIcon />,  label: 'LinkedIn', href: contact.linkedin },
+    contact.github && { icon: <GitHubIcon />,  label: 'GitHub', href: contact.github },
+    contact.email  && { icon: <EmailIcon />,   label: 'Email',  href: `mailto:${contact.email}` },
   ].filter(Boolean) as { icon: React.ReactNode; label: string; href: string }[]
 
   return (
@@ -25,12 +25,14 @@ export default function Contact() {
           Feel free to reach out — whether it's about a project, a role, or just a conversation about distributed systems and LLMs.
         </Typography>
 
-        {/* Email CTA */}
+        {/* LinkedIn CTA */}
         <Button
-          href={`mailto:${contact.email}`}
+          href={contact.linkedin}
+          target="_blank"
+          rel="noopener"
           variant="contained"
           size="large"
-          startIcon={<EmailIcon />}
+          startIcon={<LinkedInIcon />}
           sx={{
             mb: 4,
             px: 4,
@@ -42,7 +44,7 @@ export default function Contact() {
             },
           }}
         >
-          {contact.email}
+          Connect on LinkedIn
         </Button>
 
         {/* Social icons */}

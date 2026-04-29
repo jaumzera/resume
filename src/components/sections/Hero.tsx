@@ -54,7 +54,7 @@ export default function Hero() {
         {/* Avatar */}
         <Box sx={{ animation: 'fadeUp 0.5s ease both', animationDelay: '0.05s', mb: 3 }}>
           <Avatar
-            src="/resume/avatar.png"
+            src={`${import.meta.env.BASE_URL}avatar.png`}
             alt={header.name}
             sx={{
               width: 96,

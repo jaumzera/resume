@@ -54,11 +54,11 @@ export default function Hero() {
         {/* Avatar */}
         <Box sx={{ animation: 'fadeUp 0.5s ease both', animationDelay: '0.05s', mb: 3 }}>
           <Avatar
-            src={`${import.meta.env.BASE_URL}avatar.png`}
+            src={`${import.meta.env.BASE_URL}avatar.webp`}
             alt={header.name}
             sx={{
-              width: 96,
-              height: 96,
+              width: { xs: 72, sm: 96 },
+              height: { xs: 72, sm: 96 },
               mx: 'auto',
               border: `2px solid ${theme.palette.divider}`,
               boxShadow: isDark
@@ -198,23 +198,30 @@ export default function Hero() {
 
         {/* Metrics row */}
         <Stack
-          direction="row"
-          divider={<Divider orientation="vertical" flexItem />}
+          direction={{ xs: 'column', sm: 'row' }}
+          divider={
+            <Divider
+              orientation="vertical"
+              flexItem
+              sx={{ display: { xs: 'none', sm: 'flex' } }}
+            />
+          }
+          alignItems="center"
           justifyContent="center"
-          spacing={3}
+          spacing={{ xs: 1, sm: 3 }}
           sx={{
             animation: 'fadeUp 0.5s ease both',
             animationDelay: '0.5s',
-            maxWidth: 420,
+            maxWidth: { xs: '100%', sm: 420 },
             mx: 'auto',
           }}
         >
           {heroMetrics.map((m) => (
-            <Box key={m.label} sx={{ textAlign: 'center', flex: 1 }}>
+            <Box key={m.label} sx={{ textAlign: 'center', flex: { sm: 1 } }}>
               <Typography
                 variant="h5"
                 fontWeight={700}
-                sx={{ color: 'primary.main', lineHeight: 1 }}
+                sx={{ color: 'primary.main', lineHeight: 1, fontSize: { xs: '1rem', sm: '1.5rem' } }}
               >
                 {m.value}
               </Typography>

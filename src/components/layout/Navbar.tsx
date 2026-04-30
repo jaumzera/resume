@@ -147,6 +147,7 @@ export default function Navbar() {
             <IconButton
               onClick={toggleColorMode}
               size="small"
+              aria-label={mode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
               sx={{ color: 'text.secondary', '&:hover': { color: 'text.primary' } }}
             >
               {mode === 'dark' ? <LightModeIcon sx={{ fontSize: 18 }} /> : <DarkModeIcon sx={{ fontSize: 18 }} />}
@@ -172,6 +173,7 @@ export default function Navbar() {
             <IconButton
               sx={{ display: { xs: 'flex', md: 'none' }, color: 'text.secondary' }}
               size="small"
+              aria-label="Open navigation menu"
               onClick={() => setMobileOpen(true)}
             >
               <MenuIcon fontSize="small" />

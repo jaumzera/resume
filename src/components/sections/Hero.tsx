@@ -235,7 +235,11 @@ export default function Hero() {
 
       {/* Scroll cue */}
       <Box
+        role="button"
+        aria-label="Scroll to about section"
+        tabIndex={0}
         onClick={() => scrollTo('about')}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') scrollTo('about') }}
         sx={{
           position: 'absolute',
           bottom: 28,

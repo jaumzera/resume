@@ -77,7 +77,7 @@ export default function ExperienceDrawer({ job, onClose }: Props) {
             · {job.period} · {job.location}
           </Typography>
         </Box>
-        <IconButton onClick={onClose} size="small" sx={{ mt: -0.5 }}>
+        <IconButton onClick={onClose} size="small" aria-label="Close" sx={{ mt: -0.5 }}>
           <CloseIcon />
         </IconButton>
       </Box>
